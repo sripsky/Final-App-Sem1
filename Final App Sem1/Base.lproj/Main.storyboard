@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Final_App_Sem1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hippo " translatesAutoresizingMaskIntoConstraints="NO" id="zqn-RB-c0M">
+                                <rect key="frame" x="38" y="59" width="338" height="331"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="331" id="AgU-SY-Oi6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wiw-fu-Q88">
+                                <rect key="frame" x="46" y="566" width="323" height="65"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="hZQ-Qw-CnV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <state key="normal" title="ANYWHERE">
+                                    <color key="titleColor" red="0.19177982860000001" green="0.0" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAnywhereButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6I-R8-Vys"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hungry Hungry Hippo, Where should I eat?" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W8V-5i-PB5">
+                                <rect key="frame" x="37" y="365" width="341" height="167"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="32"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pwQ-tZ-XQC">
+                                <rect key="frame" x="46" y="672" width="323" height="72"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="pTp-qT-uTP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <state key="normal" title="SOMEWHAT HEALTHY">
+                                    <color key="titleColor" red="0.19177982860000001" green="0.0" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSomewhatHealthyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSj-Fe-zqe"/>
+                                    <action selector="textViewSomewhatHealthy:" destination="edB-8T-7ql" eventType="touchUpInside" id="K2e-ud-0KQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wiw-fu-Q88" firstAttribute="leading" secondItem="pwQ-tZ-XQC" secondAttribute="leading" id="4rW-Ya-Paq"/>
+                            <constraint firstItem="zqn-RB-c0M" firstAttribute="centerX" secondItem="W8V-5i-PB5" secondAttribute="centerX" id="Kq3-AQ-2CZ"/>
+                            <constraint firstItem="wiw-fu-Q88" firstAttribute="top" secondItem="W8V-5i-PB5" secondAttribute="bottom" constant="34" id="Qwu-Zj-z7l"/>
+                            <constraint firstItem="W8V-5i-PB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="bDZ-Ye-zQf"/>
+                            <constraint firstItem="zqn-RB-c0M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="dMe-B0-dhM"/>
+                            <constraint firstItem="pwQ-tZ-XQC" firstAttribute="top" secondItem="wiw-fu-Q88" secondAttribute="bottom" constant="41" id="e9O-i1-DSJ"/>
+                            <constraint firstItem="W8V-5i-PB5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="365" id="laW-1T-fN0"/>
+                            <constraint firstItem="zqn-RB-c0M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppI-jt-8uH"/>
+                            <constraint firstItem="wiw-fu-Q88" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="qSk-iv-x3J"/>
+                            <constraint firstItem="wiw-fu-Q88" firstAttribute="trailing" secondItem="pwQ-tZ-XQC" secondAttribute="trailing" id="rBi-LK-gRa"/>
+                            <constraint firstItem="W8V-5i-PB5" firstAttribute="centerX" secondItem="wiw-fu-Q88" secondAttribute="centerX" id="stO-FI-3fX"/>
+                            <constraint firstItem="zqn-RB-c0M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="xYI-fV-HXK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pwQ-tZ-XQC" secondAttribute="bottom" constant="64" id="yZl-RS-Kd7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UUC-OJ-wpH"/>
+                    <connections>
+                        <segue destination="dTm-M3-H0u" kind="show" identifier="FirstSegue" id="Rmm-tp-sT0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="edB-8T-7ql" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="95.758928571428569"/>
+        </scene>
+        <!--Restaurants Display-->
+        <scene sceneID="VPq-Qo-lh6">
+            <objects>
+                <viewController id="dTm-M3-H0u" customClass="RestaurantsDisplay" customModule="Final_App_Sem1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2h-5v-LtK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hippo " translatesAutoresizingMaskIntoConstraints="NO" id="Kq2-Ai-L72">
+                                <rect key="frame" x="155" y="217" width="278" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7FJ-2X-4NE">
+                                <rect key="frame" x="41" y="611" width="333" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.19177982860000001" green="0.0" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="uwR-VK-IP7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-LT-5i0">
+                                <rect key="frame" x="20" y="317" width="201" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hungry Hungry Hippo says you should eat at..." textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQR-Rj-0m1">
+                                <rect key="frame" x="25" y="51" width="364" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="S9o-Ji-4h6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nM4-cs-jXu"/>
+                    <connections>
+                        <outlet property="textView" destination="DE8-LT-5i0" id="ewr-1f-IfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHa-5w-5lJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.52173913043487" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hippo " width="219" height="198"/>
+    </resources>
+</document>
